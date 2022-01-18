@@ -1,16 +1,30 @@
 Package: textprepr
-Title: What the Package Does (One Line, Title Case)
+Title: Performs Pre-Processing of Tweets
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Arijeet",
+           family = "Chatterjee",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "arijc@student.ubc.ca")
+    person(given = "Joshua",
+           family = "Sia",
+           role = c("aut", "cre"),
+           email = "joshuasia2000@gmail.com")
+    person(given = "Melisa",
+           family = "Maidana",
+           role = c("aut", "cre"),
+           email = "placeholder@student.ubc.ca")
+    person(given = "Philson",
+           family = "Chan",
+           role = c("aut", "cre"),
+           email = "khpchan@student.ubc.ca")
+Description: Functions which offer additional text preprocessing functionality
+    specifically designed for tweets.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
