@@ -17,7 +17,7 @@ Authors@R:
     person(given = "Philson",
            family = "Chan",
            role = c("aut", "cre"),
-           email = "khpchan@student.ubc.ca")
+           email = "philsonchan@gmail.com")
 Description: Functions which offer additional text preprocessing functionality
     specifically designed for tweets.
 License: MIT + file LICENSE
