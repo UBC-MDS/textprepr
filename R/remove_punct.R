@@ -1,4 +1,5 @@
-#' Generate word cloud
+#' Remove all punctuation and special characters from the
+#' input tweets data
 #'
 #' @param tweets A vector of tweets
 #' @param skip Vector of charcters or NULL.
