@@ -20,5 +20,5 @@ tweets <- c(
    "Make America Great Again #DonaldTrump"
 )
 extract_hashtags(tweets)
->[1] "DonaldTrump"
+
 }

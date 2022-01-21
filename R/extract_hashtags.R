@@ -10,7 +10,7 @@
 #'    "Make America Great Again #DonaldTrump"
 #' )
 #' extract_hashtags(tweets)
-#'>[1] "DonaldTrump"
+#'
 extract_hashtags <- function(tweets) {
 
 }
