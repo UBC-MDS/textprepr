@@ -21,8 +21,14 @@ The main functions of this package are:
 
     - generate_cloud: Creates a word cloud of the most frequent words from a vector with tweets
 
-Our package can be leveraged to clean tweet data and extract new
-features.
+In the R ecosystem there are no packages focused on preprocessing tweet
+data. The popular
+[‘tweeteR’](https://www.rdocumentation.org/packages/twitteR/versions/1.1.9)
+package is oriented to provide access to the Twitter API, but any data
+cleaning should be done using general text processing packages such as
+[`stringr`](https://cran.r-project.org/web/packages/stringr/vignettes/stringr.html).
+Our package fill the niche since it can be leveraged to clean tweet data
+and extract new features.
 
 ## Installation
 
