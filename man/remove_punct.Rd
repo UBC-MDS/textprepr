@@ -2,7 +2,8 @@
 % Please edit documentation in R/remove_punct.R
 \name{remove_punct}
 \alias{remove_punct}
-\title{Generate word cloud}
+\title{Remove all punctuation and special characters from the
+input tweets data}
 \usage{
 remove_punct(tweets, skip = NULL)
 }
@@ -18,7 +19,8 @@ numbers and space would be removed.}
 Vector of tweets without special characters
 }
 \description{
-Generate word cloud
+Remove all punctuation and special characters from the
+input tweets data
 }
 \examples{
 tweets <- c(
