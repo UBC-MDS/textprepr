@@ -23,7 +23,7 @@ The main functions of this package are:
 
 In the R ecosystem there are no packages focused on preprocessing tweet
 data. The popular
-[‘tweeteR’](https://www.rdocumentation.org/packages/twitteR/versions/1.1.9)
+[`tweeteR`](https://www.rdocumentation.org/packages/twitteR/versions/1.1.9)
 package is oriented to provide access to the Twitter API, but any data
 cleaning should be done using general text processing packages such as
 [`stringr`](https://cran.r-project.org/web/packages/stringr/vignettes/stringr.html).
