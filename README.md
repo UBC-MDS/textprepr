@@ -6,7 +6,29 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of textprepr is to …
+This is an R package that offers additional text preprocessing
+functionality specifically designed for tweets. The package bundles
+functions to help with cleaning and gaining insight into tweet data,
+providing additional resources for EDA or enabling feature engineering.
+
+The main functions of this package are:
+
+    - remove_punct : Removes punctuation from a vector with tweets
+
+    - extract_ngram: Extracts n-grams from a vector with tweets
+
+    - extract_hashtags: Creates a list of hashtags from a vector with tweets
+
+    - generate_cloud: Creates a word cloud of the most frequent words from a vector with tweets
+
+In the R ecosystem there are no packages focused on preprocessing tweet
+data. The popular
+[`tweeteR`](https://www.rdocumentation.org/packages/twitteR/versions/1.1.9)
+package is oriented to provide access to the Twitter API, but any data
+cleaning should be done using general text processing packages such as
+[`stringr`](https://cran.r-project.org/web/packages/stringr/vignettes/stringr.html).
+Our package fill the niche since it can be leveraged to clean tweet data
+and extract new features.
 
 ## Installation
 
@@ -23,32 +45,29 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(textprepr)
-## basic example code
+tweets <- c(
+    "Make America Great Again! @DonaldTrump",
+    "It's rocket-science tier investment~~ #LoveElonMusk"
+)
+
+remove_punct(tweets, skip = c("'", "@", "#", "-"))
+#> NULL
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+## Contributing
 
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
+Contributors: Arijeet Chatterjee, Joshua Sia, Melisa Maidana, Philson
+Chan (DSCI_524_GROUP21).
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/master/examples>.
+Interested in contributing? Check out the [contributing
+guidelines](https://github.com/UBC-MDS/textprepr/blob/main/.github/CONTRIBUTING.md)
 
-You can also embed plots, for example:
+Please note that this project is released with a Code of Conduct. By
+contributing to this project, you agree to abide by its terms.
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+## License
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+`textprepr` was created by Arijeet Chatterjee, Joshua Sia, Melisa
+Maidana, Philson Chan (DSCI_524_GROUP21).
+
+It is licensed under the terms of the MIT license.
