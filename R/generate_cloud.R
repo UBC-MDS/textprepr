@@ -13,7 +13,7 @@
 #' tweets <- c("Make America Great Again! @DonaldTrump #America",
 #' "It's rocket-science tier investment~~ #LoveElonMusk",
 #' "America America America always GREAT",
-#' "make america great again!")
+#' "make america great again! #AMERICA")
 #' cloud_df <- generate_cloud(tweets)
 generate_cloud <- function(tweets, type = "words") {
 
@@ -31,7 +31,7 @@ generate_cloud <- function(tweets, type = "words") {
     # remove punctuation step
   }
   else if (type == "hashtag") {
-    tweets <- tweets[stringr::str_detect(tweets, "^[#@]")]
+    tweets <- tweets[stringr::str_detect(tweets, "^#")]
   }
   else if (type == "stopwords") {
     tweets <- tweets[!stringr::str_detect(tweets, "^[#@]")]
@@ -50,7 +50,7 @@ generate_cloud <- function(tweets, type = "words") {
 
   wordcloud::wordcloud(words = tweets_df$word, freq = tweets_df$freq,
                        random.order = FALSE, min.freq = 0, max.words = 20,
-                       scale = c(3.5,0.25), rot.per = 0,
+                       scale = c(2.5, 0.25), rot.per = 0,
                        colors = RColorBrewer::brewer.pal(8, "Dark2"))
 
   tweets_df
