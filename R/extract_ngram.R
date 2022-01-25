@@ -14,7 +14,7 @@
 #' extract_ngram(tweets, n=3)
 extract_ngram <- function(tweets, n = 3) {
   if (length(tweets) < n) {
-    stop("length of ngrams should be less than length of tweets")
+    stop("length of ngrams should be less than number of words in vector of tweets")
   }
   if(!is.character(tweets)) {
     stop("input should be a character vector")
