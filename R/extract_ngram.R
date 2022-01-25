@@ -27,12 +27,10 @@ extract_ngram <- function(tweets, n = 3) {
     stop("input should be a character vector")
   }
 
-  # tweets_str <- paste(tweets, sep=" ", collapse = NULL)
   tweets_str <- paste(tweets, collapse = " ")
   tweets_str_split <- stringr::str_split(tweets_str, " ")[[1]]
   n <- n - 1
 
-  # print(tweets_str_split)
   output_vec <- character(length(tweets_str_split) - n)
   for(i in 1:length(output_vec)){
     for(j in i:(i+n)){
