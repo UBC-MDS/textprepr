@@ -23,6 +23,7 @@ Generate word cloud
 \examples{
 tweets <- c("Make America Great Again! @DonaldTrump #America",
 "It's rocket-science tier investment~~ #LoveElonMusk",
-"America America America")
-generate_cloud(tweets)
+"America America America always GREAT",
+"make america great again!")
+cloud_df <- generate_cloud(tweets)
 }
