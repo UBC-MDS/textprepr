@@ -6,7 +6,7 @@
 #'    "hashtag" only shows hashtags,
 #'    and "stopwords" does not show common English words.
 #'
-#' @return A plot figure
+#' @return A dataframe containing words and their associated frequencies
 #' @export
 #'
 #' @examples
