@@ -5,7 +5,7 @@ test_that("Generated ngrams is incorrect", {
   expect_equal(extract_ngram(helper_data, n=3), c("Make America Great", "America Great Again", "Great Again DonaldTrump"))
   expect_equal(extract_ngram(helper_data, n=4), c("Make America Great Again", "America Great Again DonaldTrump"))
   expect_equal(extract_ngram(helper_data, n=5), c("Make America Great Again DonaldTrump"))
-
+})
 test_that("Length of ngrams should be less than number of words in vector of tweets", {
   expect_error(extract_ngram(helper_data, n=10))
 })
