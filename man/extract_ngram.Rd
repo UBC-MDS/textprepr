@@ -20,7 +20,7 @@ Extract n-grams from the input tweets data
 }
 \examples{
 tweets <- c(
-   "Make America Great Again DonaldTrump"
+   "Make", "America", "Great", "Again", "DonaldTrump"
 )
 extract_ngram(tweets, n=3)
 }
