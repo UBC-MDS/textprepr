@@ -23,6 +23,23 @@ test_that("generate_cloud shows the wrong proportion of words", {
     freq = c(2L, 1L)
   )
 
+  expected_words <- data.frame(
+    word = c("again", "always", "america", "great", "investment",
+             "it's", "make", "rocket-science", "tier"),
+    freq = c(2L, 1L, 5L, 3L, 1L, 1L, 2L, 1L, 1L)
+  )
+
+  expected_stopwords <- data.frame(
+    word = c("always", "america", "great", "investment",
+             "make", "rocket-science", "tier"),
+    freq = c(1L, 5L, 3L, 1L, 2L, 1L, 1L)
+  )
+
   actual_hashtag <- generate_cloud(tweets, type = "hashtag")
+  actual_words <- generate_cloud(tweets)
+  actual_stopwords <- generate_cloud(tweets, type = "stopwords")
+
   expect_identical(actual_hashtag, expected_hashtag)
+  expect_identical(actual_words, expected_words)
+  expect_identical(actual_stopwords, expected_stopwords)
 })

@@ -28,14 +28,14 @@ generate_cloud <- function(tweets, type = "words") {
 
   if (type == "words") {
     tweets <- tweets[!stringr::str_detect(tweets, "^[#@]")]
-    # remove punctuation step
+    tweets <- remove_punct(tweets, skip = c("'", "-"))
   }
   else if (type == "hashtag") {
     tweets <- tweets[stringr::str_detect(tweets, "^#")]
   }
   else if (type == "stopwords") {
     tweets <- tweets[!stringr::str_detect(tweets, "^[#@]")]
-    # remove punctuation step
+    tweets <- remove_punct(tweets, skip = c("'", "-"))
     tweets <- tweets[
       !tweets %in% stopwords::stopwords("en", source = "nltk")
       ]
