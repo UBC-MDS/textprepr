@@ -12,6 +12,11 @@
 #' extract_hashtags(tweets)
 #'
 extract_hashtags <- function(tweets) {
-
+  if(!is.character(tweets)) {
+    stop("input should be a character vector")
+  }
+  output_vec <- stringr::str_extract_all(tweets, "#\\S+")
+  output_vec <-   stringr::str_remove_all(unlist(output_vec), "#")
+  output_vec
 }
 
