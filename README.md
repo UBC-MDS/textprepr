@@ -36,7 +36,7 @@ You can install the released version of textprepr from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("textprepr")
+devtools::install_github("UBC-MDS/textprepr")
 ```
 
 ## Example
@@ -51,7 +51,8 @@ tweets <- c(
 )
 
 remove_punct(tweets, skip = c("'", "@", "#", "-"))
-#> NULL
+#> [1] "Make America Great Again @DonaldTrump"            
+#> [2] "It's rocket-science tier investment #LoveElonMusk"
 ```
 
 ## Contributing

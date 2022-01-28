@@ -39,7 +39,7 @@ Our package fill the niche since it can be leveraged to clean tweet data and ext
 You can install the released version of textprepr from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("textprepr")
+devtools::install_github("UBC-MDS/textprepr")
 ```
 
 ## Example
