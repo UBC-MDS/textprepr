@@ -32,5 +32,5 @@ Imports:
     wordcloud,
     stringr,
     RColorBrewer,
-    stopwords,
-    purrr
+    purrr,
+    stopwords
