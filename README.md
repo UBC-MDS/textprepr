@@ -33,7 +33,7 @@ and extract new features.
 ## Installation
 
 You can install the released version of textprepr from
-[CRAN](https://CRAN.R-project.org) with:
+[GitHub](https://github.com/) with:
 
 ``` r
 devtools::install_github("UBC-MDS/textprepr")

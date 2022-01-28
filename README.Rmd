@@ -36,7 +36,7 @@ Our package fill the niche since it can be leveraged to clean tweet data and ext
 
 ## Installation
 
-You can install the released version of textprepr from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of textprepr from [GitHub](https://github.com/) with:
 
 ``` r
 devtools::install_github("UBC-MDS/textprepr")
