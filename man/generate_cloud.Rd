@@ -15,7 +15,7 @@ Type of content to show in wordcloud. "words" shows all words,
 and "stopwords" does not show common English words.}
 }
 \value{
-A plot figure
+A dataframe containing words and their associated frequencies
 }
 \description{
 Generate word cloud
@@ -23,6 +23,7 @@ Generate word cloud
 \examples{
 tweets <- c("Make America Great Again! @DonaldTrump #America",
 "It's rocket-science tier investment~~ #LoveElonMusk",
-"America America America")
-generate_cloud(tweets)
+"America America America always GREAT",
+"make america great again! #AMERICA")
+cloud_df <- generate_cloud(tweets)
 }
