@@ -1,0 +1,64 @@
+---
+title: "textprepr-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{textprepr-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Load package
+
+```{r setup}
+library(textprepr)
+```
+
+## Create tweets data
+
+```{r data}
+tweets <- c("Make America Great Again! @DonaldTrump #America",
+            "It's rocket-science tier investment~~ #LoveElonMusk",
+            "America America America always GREAT",
+            "make america great again! #AMERICA")
+```
+
+## Data cleaning
+
+```{r clean}
+remove_punct(tweets)
+```
+
+```{r clean-skip}
+remove_punct(tweets, skip="@#'")
+```
+
+## Feature engineering
+
+```{r feat-eng-1}
+extract_ngram(tweets, n=4)
+```
+
+```{r feat-eng-2}
+extract_hashtags(tweets)
+```
+
+## Data visualization
+
+```{r data-viz}
+tweet_count <- generate_cloud(tweets, type="words")
+```
+
+```{r data-viz-hashtag}
+tweet_count <- generate_cloud(tweets, type="hashtag")
+```
+
+```{r data-viz-stopwords}
+tweet_count <- generate_cloud(tweets, type="stopwords")
+```
