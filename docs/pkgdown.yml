@@ -1,0 +1,10 @@
+pandoc: 2.14.2
+pkgdown: 2.0.2
+pkgdown_sha: ~
+articles:
+  textprepr-vignette: textprepr-vignette.html
+last_built: 2022-02-03T00:37Z
+urls:
+  reference: https://pkgdown.textprepr.org/reference
+  article: https://pkgdown.textprepr.org/articles
+
