@@ -33,7 +33,7 @@ and extract new features.
 ## Documentation
 
 You can view our package documentation on GitHub Pages
-[here](ubc-mds.github.io/textprepr/).
+[here](https://ubc-mds.github.io/textprepr/).
 
 ## Installation
 
