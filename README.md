@@ -30,6 +30,11 @@ cleaning should be done using general text processing packages such as
 Our package fill the niche since it can be leveraged to clean tweet data
 and extract new features.
 
+## Documentation
+
+You can view our package documentation on GitHub Pages
+[here](ubc-mds.github.io/textprepr/).
+
 ## Installation
 
 You can install the released version of textprepr from
