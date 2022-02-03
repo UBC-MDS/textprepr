@@ -36,7 +36,7 @@ Our package fill the niche since it can be leveraged to clean tweet data and ext
 
 ## Documentation
 
-You can view our package documentation on GitHub Pages [here](ubc-mds.github.io/textprepr/).
+You can view our package documentation on GitHub Pages [here](https://ubc-mds.github.io/textprepr/).
 
 ## Installation
 
