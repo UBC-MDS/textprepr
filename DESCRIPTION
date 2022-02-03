@@ -2,22 +2,22 @@ Package: textprepr
 Title: Performs Pre-Processing of Tweets
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Arijeet",
+    c(person(given = "Arijeet",
            family = "Chatterjee",
-           role = c("aut", "cre"),
-           email = "arijc@student.ubc.ca")
+           role = "aut",
+           email = "arijc@student.ubc.ca"),
     person(given = "Joshua",
            family = "Sia",
-           role = c("aut", "cre"),
-           email = "joshuasia2000@gmail.com")
+           role = "aut",
+           email = "joshuasia2000@gmail.com"),
     person(given = "Melisa",
            family = "Maidana",
-           role = c("aut", "cre"),
-           email = "placeholder@student.ubc.ca")
+           role = "aut",
+           email = "placeholder@student.ubc.ca"),
     person(given = "Philson",
            family = "Chan",
            role = c("aut", "cre"),
-           email = "philsonchan@gmail.com")
+           email = "philsonchan@gmail.com"))
 Description: Functions which offer additional text preprocessing functionality
     specifically designed for tweets.
 License: MIT + file LICENSE
@@ -26,6 +26,8 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Suggests: 
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
@@ -34,3 +36,4 @@ Imports:
     RColorBrewer,
     purrr,
     stopwords
+VignetteBuilder: knitr
